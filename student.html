@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="backend.php">
+        <div>
+           Full name:<input type="text" name="myFullname">
+        </div>
+        <br>
+        <div>
+            Date of birth:<input type="date" name="mydateofbirth">
+        </div>
+        <br>
+        <div>
+            Gender:male<input type="radio" name="myGender">
+                   female<input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Phone No:<input type="text" name="myPhoneno">
+        </div>
+        <br>
+        <div>
+            Email:<input type="text" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Address:<input type="text" name="myAddress">
+        </div>
+        <br>
+        <div>
+            Father Name:<input type="text" name="myFathername">
+        </div>
+        <br>
+        <div>
+            Mother Name:<input type="text" name="myMothername">
+        </div>
+        <br>
+        <div>
+            Monthly income:<input type="text" name="myMonthlyincome">
+        </div>
+        <br>
+        <div>
+            <label for="course">Course:</label>
+            <select id="course" name="course">
+                <option value="">Select a coourse</option>
+                <option value="computer_science">Computer Science</option>
+                <option value="bussiness administration">Business Administration</option>
+                <option value="mechanical_engineering">Mechanical Engineering</option>
+                <option value="electrical_engineering">Electrical Engineering</option>
+                <option value="civil_engineering">Civil Engineering</option>
+            </select>
+        </div>
+        <br>
+       <div>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+       </div> 
+    </form>
+    
+</body>
+</html>

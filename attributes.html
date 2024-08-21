@@ -1,0 +1,36 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Data Attributes</title>
+    <style>
+        body {
+            background-color: rgb(203, 203, 17);
+            font-family: cursive;
+            margin: 20%;
+            padding: 0%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Favourite Heros and their upcoming movies:</h1>
+        <p>click on the title name to know the hero</p>
+        <ul>
+            <li onclick="favouriteHero(this)" data-favourite-hero="Allu Arjun">Puspa</li>
+            <li onclick="favouriteHero(this)" data-favourite-hero="NTR">Devara</li>
+            <li onclick="favouriteHero(this)" data-favourite-hero="Pawan Kalyan">OG</li>
+            <li onclick="favouriteHero(this)" data-favourite-hero="Ram charan">Game Changer</li>
+            <li onclick="favouriteHero(this)" data-favourite-hero="Nani">Saripodha Sanivaram</li>
+        </ul>
+        <script>
+            function favouriteHero(element) {
+                var hero = element.getAttribute("data-favourite-hero");
+                alert(hero);
+            }
+        </script>
+    </div>
+</body>
+</html>

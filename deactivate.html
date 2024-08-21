@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap Chat Deactivation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(214, 241, 5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: ghostwhite;
+            padding: 20px;
+            border: solid;
+            width: 300px;
+            text-align: center;
+        }
+        .form-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .form-container input[type="text"], .form-container input[type="password"], .form-container input[type="email"], .form-container input[type="phone number"],.form-container input[type="code"] ,.form-container select {
+            width: 100%;
+            padding: 5px;
+            margin: 10px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+        }
+        .form-container button {
+            background-color: #dfef03;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .form-container button:hover {
+            background-color: #3071d1;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Deactivate Account</h1>
+     <form action="vaishu.html" method="post">
+            <input type="text"  name="username" id="username" required value ="username">
+            <input type="password"  name="password" id="password" required value="password">
+            <input type="email" name="email" id="email" required value="enter email">
+            <input type="phone number" name="phone number" id="phone number" required value="Enter the 10-digit number">
+            <select id="reason" name="reason" required>
+                <option value="">Why are you deactivating your account?</option>
+                <option value="">Concerned about privacy</option>
+                <option value="">Too addictive</option>
+                <option value="">Other</option>
+            </select>
+            <button type="submit">Deactivate Account</button>
+        </form>
+    </div>
+</body>
+</html>
